@@ -1,0 +1,70 @@
+@use "../base/variables.scss" as *;
+
+.activities {
+    padding-top: 60px;
+    &__wrapper {
+        margin-top: 20px;
+        row-gap: 40px;
+    }
+    &__img {
+        width: 100%;
+        margin-top: 40px;
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    &__text {
+        margin-top: 20px;
+        color: $dark;
+        font-weight: 400;
+        line-height: normal;
+        &--colored {
+            font-weight: 500;
+            color: $ceramic-main;
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .activities {
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__text {
+            margin-top: 25px;
+            font-size: 20px;
+        }
+        &__col {
+            padding: 0 10px;
+        }
+        &__img {
+            height: 220px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 1279.98px) {
+    .activities {
+        padding: 60px 0 0 0;
+        &__wrapper {
+            margin-top: 80px;
+        }
+        &__col {
+            padding: 0 10px;
+        }
+        &__img {
+            margin-top: 60px;
+            height: 320px;
+        }
+        &__text {
+            &--fixed {
+                width: 556px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1919.98px) {
+    .activities {
+        padding-top: 100px;
+    }
+}
